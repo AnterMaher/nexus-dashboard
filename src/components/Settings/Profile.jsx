@@ -90,11 +90,13 @@ const Profile = () => {
       </Box>
 
       <Grid container spacing={3}>
-        <Grid size={{ xs: 12, sm: 6 }}>
+         <Grid size={{ xs: 12, sm: 6 }}>
           <TextField
             fullWidth
             label="First Name"
             name="firstName"
+            required
+            placeholder={profile.firstName}
             value={profile.firstName}
             onChange={handleChange}
           />
@@ -104,6 +106,8 @@ const Profile = () => {
             fullWidth
             label="Last Name"
             name="lastName"
+            required
+            placeholder={profile.lastName}
             value={profile.lastName}
             onChange={handleChange}
           />
@@ -113,6 +117,8 @@ const Profile = () => {
             fullWidth
             label="Email Address"
             name="email"
+            required
+            placeholder={profile.email}
             value={profile.email}
             onChange={handleChange}
           />
@@ -122,6 +128,8 @@ const Profile = () => {
             fullWidth
             label="Phone Number"
             name="phone"
+            required
+            placeholder={profile.phone}
             value={profile.phone}
             onChange={handleChange}
           />
